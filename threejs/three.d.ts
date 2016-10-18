@@ -2114,7 +2114,7 @@ declare namespace THREE {
          *
          * @param url
          */
-        load(url: string, onLoad?: (texture: Texture) => void): Texture;
+        load(url: string, onLoad?: (texture: Texture) => void, onProgress?: (event: any) => void, onError?: (event: any) => void): Texture;
         setCrossOrigin(crossOrigin: string): TextureLoader;
         setWithCredentials(value: string): TextureLoader;
         setPath(path: string): TextureLoader;
